@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{My First Document} \author{Dale Alleshouse}
+
+\begin{document} \maketitle
+
+\begin{abstract}
+    Smartphones are increasingly being used to store personal
+    information as well as to access sensitive data from the Internet and the
+    cloud.
+\end{abstract}
+
+\section{Introduction} This is a super normal, boring, and stupid
+paragraph\ldots
+
+\subsection{Some Background} Here is some back ground, all the way from blah
+blah blah
+
+\subsubsection{Drilled Down}\label{sec:drilled-down} It's getting deep in here!
+
+\newpage
+\section{More Stuff}
+
+Insert a figure in this section. 1
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{att-models-base.pdf}
+    \caption{My First Figure}\label{fig:first-figure}
+\end{figure}
+
+More text here
+
+\begin{table}
+    \centering
+    \begin{tabular}{lccp{0.1\testwidth}}
+        \toprule
+        Header 1    &   Header 2    &   Header 3    &   Header 4 \\
+        \midrule
+        1           &   2           &   3           &   4   \\
+        \bottomrule
+    \end{tabular}
+    \caption{My First Table}\label{tab:first-table}
+\end{table}
+
+\end{document}
