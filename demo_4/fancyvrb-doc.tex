@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage{fancyvrb}
+
+\newcommand{\email}{dealleshouse@sei.cmu.edu}
+\newcommand{\me}{Dale Alleshouse}
+
+
+\begin{document}
+\title{Fancy Verbatim Outputs in \LaTeX}
+\author{\me\\\email}
+\maketitle
+
+\begin{Verbatim}[frame=single, label=One Hot Program, numbers=left, commandchars=\\\{\}]
+  First verbatim line.
+  Something new goes here
+  Second verbatim line.\label{line:impline}
+  And even more
+\end{Verbatim}
+
+
+And we can refer to lines as with algorithmic package: Line~\ref{line:impline}.
+
+
+\end{document}

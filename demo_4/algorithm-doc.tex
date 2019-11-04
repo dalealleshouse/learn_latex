@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+\begin{document}
+\title{Algorithms in \LaTeX}
+\author{Dale Alleshouse \\ dealleshouse@sei.cmu.edu}
+\maketitle
+
+\section{Introduction}
+Is this going to work?
+
+\section{Algorithm}
+\begin{algorithm}
+  \begin{algorithmic}
+    \REQUIRE{$n$: desired quantity of Fibonacci numbers}
+    \ENSURE{Fibonacci numbers}
+
+    \STATE~x=2;
+    \FOR{i $\to$ 2}
+    \STATE~x++;\label{line:impline}
+    \ELSE\
+    \RETURN\label{line:mostimp}
+    \ENDIF\
+  \end{algorithmic}
+  \caption{My First Simple Algorithm}\label{algo:first}
+\end{algorithm}
+
+And of course, we can refer to the algorithm using \verb|\ref|: See Algorithm~\ref{algo:first} but
+the good thing is we can also refer to a specific line e.g. Line~\ref{line:impline} or
+Line~\ref{line:mostimp}.
+
+\end{document}

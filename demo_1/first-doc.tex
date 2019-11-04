@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{My First Document} \author{Dale Alleshouse}
+
+\begin{document} \maketitle
+
+\begin{abstract}
+    Smartphones are increasingly being used to store personal
+    information as well as to access sensitive data from the Internet and the
+    cloud.
+
+    I would like to put another paragraph in here. What would it look like? What
+    would it be about? The options are endless with the proper amount of
+    imagination.
+\end{abstract}
+
+\section{Introduction} This is a super normal, boring, and stupid
+paragraph\ldots
+
+\subsection{Some Background} Here is some back ground, all the way from blah
+blah blah
+
+\subsubsection{Drilled Down}\label{sec:drilled-down} It's getting deep in here!
+
+\newpage
+\section{More Stuff}
+
+Insert a figure in this section. 1
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{att-models-base.pdf}
+    \caption{My Second Figure}\label{fig:second-figure}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\textwidth]{att-models-base.pdf}
+    \caption{My First Figure}\label{fig:first-figure}
+\end{figure}
+
+
+More text here
+
+\begin{table}
+    \centering
+    \begin{tabular}{lccp{0.1\textwidth}}
+        \toprule
+        Header 1    &   Header 2    &   Header 3    &   Header 4 \\
+        \midrule
+        1           &   2           &   3           &   4   \\
+        \bottomrule
+    \end{tabular}
+    \caption{My First Table}\label{tab:first-table}
+\end{table}
+
+\section{More More Stuff}
+As we saw in Section~\ref{sec:drilled-down} the world sucks!
+
+Let's also reference Figure~\ref{fig:second-figure}
+
+What the hell, let's reference a table as well. How about
+Table~\ref{tab:first-table}
+
+\input{subfile}
+
+\end{document}

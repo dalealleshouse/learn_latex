@@ -1,0 +1,45 @@
+\documentclass{article}
+
+\begin{document}
+\title{Using Bibliographies in \LaTeX}
+\author{Dale Alleshouse}
+\maketitle
+
+% -------------------- Main document --------------------------------
+
+\section{Introduction}
+Using and managing bibliographies in \LaTeX\ is very easy. These are the steps required to use them:
+
+Not this again, it's a \emph{tragedy}. What is its problem?  \verb|This is some funky verb texts|.
+
+\begin{enumerate}
+  \item Create a main document file
+  \item Create a project
+  \item Collect bibliography entries in a \verb|.bib| file. For this:
+    \begin{itemize}
+      \item Get the bibliography from Google Scholar/ACM or wherever (much easier) or
+      \item Writes the entry yourself. I want one!
+    \end{itemize}
+  \item Add a \verb|\bibliographystyle| and a \verb|\bibliography| command to your document.
+  \item \emph{Cite} the references where you need using the key.
+  \item Build the project a couple of times to get the citations in the main document. This is an
+    auspicious issue.
+\end{enumerate}
+
+\section{Some Background Text}
+We are going to use this section to put some text in our document and at some points, we are going
+to inset a reference. This, for example, is going to turn into a
+reference~\cite{se-cs-collab:nauman10}. This~\cite{nauman2011using} is yet another reference. And so
+on.\cite{seo2011user} I need to site my idol, Donald Knuth~\cite{knuth1997art}. What about one more
+new in-cite-ful citation~\cite{seo2011user}.
+
+Let's try this again\ldots.
+
+
+% -------------------------------------------------------------------
+% add bibliography-related commands here
+
+\bibliographystyle{plain}
+\bibliography{bibfile}
+
+\end{document}

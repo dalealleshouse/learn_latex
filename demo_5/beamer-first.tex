@@ -1,0 +1,94 @@
+\documentclass{beamer}
+\usetheme[
+outer/progressbar=foot,
+outer/numbering=none
+]{metropolis}
+\usepackage{xcolor}
+
+% \definecolor{Purple}{HTML}{911146}
+% \setbeamercolor{frametitle}{bg=Purple}
+
+% \definecolor{Alternate}{HTML}{3366cc}
+% \setbeamercolor{frametitle}{bg=Alternate}
+
+% \usepackage[sfdefault]{sourcesanspro}
+% \usepackage[sfdefault]{FiraSans}
+
+\newcommand{\me}{Dale Alleshouse}
+\newcommand{\email}{dealleshouse@sei.cmu.edu}
+
+\title{Creating Polished Presentations}
+\date{October 31, 2019}
+\author{\me\\\email}
+
+\begin{document}
+
+% ------------------------------------- Introduction -----------------------------------------------
+\section{Introduction to \LaTeX{} Presentations}
+\maketitle
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% ------------------------------------- Hello ------------------------------------------------------
+\section{Hello World}
+\begin{frame}{One piece at a time}
+  This is the first line \ldots
+
+  \pause{}
+
+  This is the second line \ldots
+\end{frame}
+
+\begin{frame}
+  This is not that important\ldots
+
+  \begin{block}{Observation}
+    This is a very important piece of information
+  \end{block}
+
+  Why is there unimportant content in this presentation?
+\end{frame}
+
+\begin{frame}
+  \frametitle{First Frame}
+  Hello World!
+  \[
+    E=mc^2
+  \]
+\end{frame}
+
+% ------------------------------------- Some Nice Content ------------------------------------------
+\section{Some Nice Content}
+\begin{frame}[t]{Full on Sexy}
+  Some text
+
+  Some more text
+
+  \begin{itemize}
+    \item{Foo}
+    \item{Bar}
+    \item{Foo Bar}
+    \item{Things
+        \begin{enumerate}
+          \item{thing 1}
+          \item{thing 2}
+        \end{enumerate}}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Wait, it gets even more Sexy}
+  Ohh\ldots Ahhh\ldots So Sexy
+
+  Wait, stop, it's too sexy
+\end{frame}
+
+% ------------------------------------- Conclusion -------------------------------------------------
+\section{Conclusion}
+% standout is only available with the metropolis theme
+\begin{frame}[standout]{That's All Folks}
+  See Ya Next Time!
+\end{frame}
+
+\end{document}

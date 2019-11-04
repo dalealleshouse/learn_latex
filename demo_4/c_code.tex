@@ -1,0 +1,24 @@
+\documentclass{article}
+\usepackage[cache=false]{minted}
+\usepackage{listings}
+
+\begin{document}
+\section{Some Sexy C Linked List}
+Code listing~\ref{lis:linked-list-header} is the header file and code listing~\ref{lis:linked-list}
+is the accompanying code.
+
+\begin{listing}[]
+  \centering
+  \caption{It's a beautiful header file}
+  \inputminted[linenos, frame=lines]{c}{LinkedList.h}
+  \label{lis:linked-list-header}
+\end{listing}
+
+\begin{listing}[]
+  \centering
+  \caption{It's a even more beautiful code file}
+  \inputminted[linenos, frame=lines, lastline=50]{c}{LinkedList.c}
+  \label{lis:linked-list}
+\end{listing}
+
+\end{document}

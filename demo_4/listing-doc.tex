@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{listings}
+
+\newcommand{\me}{Dale Alleshouse}
+\newcommand{\email}{dealleshouse@sei.cmu.edu}
+
+\begin{document}
+\title{Listings Example}
+\author{\me\\\email}
+\maketitle
+
+\lstset{language=c++}
+\lstset{caption=Super Bad Ass Code}
+\begin{lstlisting}[frame=single, basicstyle=\ttfamily, numbers=left]
+  for(int i = 0; i < 10; i++) {
+    // increment the pointer
+    *p++ = i;
+  }
+\end{lstlisting}
+
+
+
+% And we can refer to Listing~\ref{lst:lowertri} in text.
+
+
+
+\end{document}
